@@ -47,9 +47,9 @@
     text-align: center;
     position: absolute;
     backface-visibility: hidden;
-   
 }
-    .page {
+
+.page {
     width: 100%;
     height: 100%; 
     font-size: 16px;
@@ -65,11 +65,11 @@
     text-align: center;
     position: absolute;
     backface-visibility: hidden;
-   
 }
-    .page p {
-        line-height:1.5;
-    }
+
+.page p {
+    line-height: 1.5;
+}
 
 .title {
     font-size: 20px;
@@ -84,7 +84,7 @@
     color: #555;
 }
 
- .book::before {
+.book::before {
     content: "";
     width: 15px;
     height: 393px; /* Match the height of the book */
@@ -95,56 +95,55 @@
     border-radius: 5px 0 0 5px;
     z-index: 1; /* Ensure it's below the cover */
 }
-    table {
-        height:100%;
-        width:90%;
 
-    }
-   
-
+table {
+    height: 100%;
+    width: 90%;
+}
 </style>
-    <table>
-        <tr>
-            <td>
-                <div class="book">
-        <div class="cover">
-            <h1 class="title">Introduction to Computing</h1>
-            <p class="author">CS101</p>
-        </div>
-        <div class="page">
-            <p>Hardware, Software, and IT Services Industry</p><hr>
-            <p>IT Profession and Career</p><hr>
-            <p>History of Computing</p><hr>
-            <p>Key components of a Computer System</p><hr>
-            <p>Malware</p><hr>
-        </div>
-                </div>
-            </td>
-            <td>
-                
-    <div class="book">
-        <div class="cover">
-            <h1 class="title">Mathematics in the Modern World</h1>
-            <p class="author">GEC4</p>
-        </div>
-        <div class="page">
-            <p>Nature of Mathematics </p><hr>
-            <p>Patterns and Numbers in Nature</p><hr>
-            <p>Fibonacc Sequence</p><hr>
-            <p>Simple and Compound Interest </p><hr>
-            <p>Malware</p><hr>
-        </div>
-    </div>
-            </td>
-        </tr>
-    </table>
 
-            
-    <script>
-        $(document).on("click", ".book", function(){
-            $(".cover").css("display", "none");
-            $(".page").css("display", "block");
-        });
-    </script>
+<table>
+    <tr>
+        <td>
+            <div class="book">
+                <div class="cover">
+                    <h1 class="title">Introduction to Computing</h1>
+                    <p class="author">CS101</p>
+                </div>
+                <div class="page">
+                    <p>Hardware, Software, and IT Services Industry</p><hr>
+                    <p>IT Profession and Career</p><hr>
+                    <p>History of Computing</p><hr>
+                    <p>Key components of a Computer System</p><hr>
+                    <p>Malware</p><hr>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="book">
+                <div class="cover">
+                    <h1 class="title">Mathematics in the Modern World</h1>
+                    <p class="author">GEC4</p>
+                </div>
+                <div class="page">
+                    <p>Nature of Mathematics</p><hr>
+                    <p>Patterns and Numbers in Nature</p><hr>
+                    <p>Fibonacci Sequence</p><hr>
+                    <p>Simple and Compound Interest</p><hr>
+                    <p>Malware</p><hr>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script>
+    $(document).on("click", ".book", function(){
+        // Hide the cover and show the page of the clicked book
+        $(this).find(".cover").hide();
+        $(this).find(".page").show();
+    });
+</script>
+
 </body>
 </html>
