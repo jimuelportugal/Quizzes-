@@ -66,12 +66,12 @@
  .book::before {
     content: "";
     width: 15px;
-    height: 4000px; /* Match the height of the book */
+    height: calc(100% - 4px); /* Match the height of the book */
     background-color: #444;
     position: absolute;
     left: -15px; /* Align with the left side of the book */
     top: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 10px 0 0 10px;
     z-index: 1; /* Ensure it's below the cover */
 }
 
