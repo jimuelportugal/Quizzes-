@@ -139,19 +139,14 @@ table {
 
 <script>
     $(document).on("click", ".book", function(){
-        // Hide the cover and show the page of the clicked book
         $(this).find(".cover").hide();
         $(this).find(".page").show();
     });
     $(document).on("click", ".Computing", function(){
-        // Hide the cover and show the page of the clicked book
-        $(this).find(".cover").hide();
-        $(this).find(".page").show();
+        $(this).find(".Math").hide();
     });
     $(document).on("click", ".Math", function(){
-        // Hide the cover and show the page of the clicked book
-        $(this).find(".cover").hide();
-        $(this).find(".page").show();
+        $(this).find(".Computing").hide();
     });
 </script>
 
