@@ -110,7 +110,7 @@ table {
                     <h1 class="title">Introduction to Computing</h1>
                     <p class="author">CS101</p>
                 </div>
-                <div class="page">
+                <div class="page CompPage">
                     <p>Hardware, Software, and IT Services Industry</p><hr>
                     <p>IT Profession and Career</p><hr>
                     <p>History of Computing</p><hr>
@@ -125,7 +125,7 @@ table {
                     <h1 class="title">Mathematics in the Modern World</h1>
                     <p class="author">GEC4</p>
                 </div>
-                <div class="page">
+                <div class="page MathPage">
                     <p>Nature of Mathematics</p><hr>
                     <p>Patterns and Numbers in Nature</p><hr>
                     <p>Fibonacci Sequence</p><hr>
@@ -138,15 +138,19 @@ table {
 </table>
 
 <script>
-    $(document).on("click", ".book", function(){
-        $(this).find(".cover").hide();
-        $(this).find(".page").show();
-    });
+    // $(document).on("click", ".book", function(){
+    //     $(this).find(".cover").hide();
+    //     $(this).find(".page").show();
+    // });
     $(document).on("click", ".Computing", function(){
         $(this).find(".Math").hide();
+        
+        $(this).find(".CompPage").show();
     });
     $(document).on("click", ".Math", function(){
         $(this).find(".Computing").hide();
+        
+        $(this).find(".MathPage").show();
     });
 </script>
 
