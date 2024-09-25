@@ -143,12 +143,14 @@ table {
     //     $(this).find(".page").show();
     // });
     $(document).on("click", ".Computing", function(){
+        $(this).find(".Computing").hide();
         $(this).find(".Math").hide();
         
         $(this).find(".CompPage").show();
     });
     $(document).on("click", ".Math", function(){
         $(this).find(".Computing").hide();
+        $(this).find(".Math").hide();
         
         $(this).find(".MathPage").show();
     });
