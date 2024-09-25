@@ -139,20 +139,20 @@ table {
 
 <script>
     // $(document).on("click", ".book", function(){
-    //     $(this).find(".cover").hide();
-    //     $(this).find(".page").show();
+    //     $(this).css(".cover").none();
+    //     $(this).css(".page").show();
     // });
     $(document).on("click", ".Computing", function(){
-        $(this).find(".Computing").hide();
-        $(this).find(".Math").hide();
+        $(".Computing").css("display","none");
+        $(".Math").css("display","none");
         
-        $(this).find(".CompPage").show();
+        $(".CompPage").css("display","block");
     });
     $(document).on("click", ".Math", function(){
-        $(this).find(".Computing").hide();
-        $(this).find(".Math").hide();
+        $(".Computing").css("display","none");
+        $(".Math").css("display","none");
         
-        $(this).find(".MathPage").show();
+        $(".MathPage").css("display","block");
     });
 </script>
 
