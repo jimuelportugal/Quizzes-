@@ -105,7 +105,7 @@ table {
 <table>
     <tr>
         <td>
-            <div class="book">
+            <div class="book Computing">
                 <div class="cover">
                     <h1 class="title">Introduction to Computing</h1>
                     <p class="author">CS101</p>
@@ -120,7 +120,7 @@ table {
             </div>
         </td>
         <td>
-            <div class="book">
+            <div class="book Math">
                 <div class="cover">
                     <h1 class="title">Mathematics in the Modern World</h1>
                     <p class="author">GEC4</p>
@@ -139,6 +139,16 @@ table {
 
 <script>
     $(document).on("click", ".book", function(){
+        // Hide the cover and show the page of the clicked book
+        $(this).find(".cover").hide();
+        $(this).find(".page").show();
+    });
+    $(document).on("click", ".Computing", function(){
+        // Hide the cover and show the page of the clicked book
+        $(this).find(".cover").hide();
+        $(this).find(".page").show();
+    });
+    $(document).on("click", ".Math", function(){
         // Hide the cover and show the page of the clicked book
         $(this).find(".cover").hide();
         $(this).find(".page").show();
